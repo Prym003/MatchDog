@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transition: 0.3s;
+  animation: ease-in-out;
+  margin: 1.2rem;
+  background-color:rgb(49, 58, 58);
+  border-radius: 25px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.image {
+  overflow: hidden;
+  height: 250px;
+  align-content: center;
+}
+
+.card_content {
+    margin: 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+
+}
+
+.title {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.card_caract {
+}

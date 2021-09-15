@@ -17,7 +17,7 @@ class BreedModel extends ModelController {
       });
       breedName.length
         ? res.status(200).send(breedName)
-        : res.status(404).send(`${name} not found`);
+        : res.status(200).send(`${name} not found`);
     } else {
       res.status(200).send(allBreeds);
     }
@@ -34,6 +34,24 @@ class BreedModel extends ModelController {
     filteredBreedsById.length
       ? res.status(200).send(filteredBreedsById)
       : res.status(404).send("Breed not found");
+  };
+
+  createDbData = (req, res, next) => {
+    const element = req.body;
+    try {
+      return this.model
+        .create({
+          ...element,
+        })
+        .then((breed) => {
+          breed.addTemperament(element.temperaments);
+        })
+        .then((created) => {
+          return res.send(created);
+        });
+    } catch (err) {
+      next(err.toJSON);
+    }
   };
 }
 

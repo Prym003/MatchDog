@@ -9,10 +9,10 @@ class TemperamentModel extends ModelController {
     let allData = await this.getApiData();
     let alltemps = [];
     allData.map((el) => {
-      let elTemp = el.temperament;
+      let elTemp = el.temperaments;
       if(elTemp !== undefined){
       for (let i = 0; i < elTemp.length; i++) {
-        let tem = el.temperament[i];
+        let tem = el.temperaments[i];
         if (!alltemps.includes(tem)) {
           alltemps.push(tem);
         }}

@@ -1,0 +1,30 @@
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92.5vh;
+  background-image: url("https://images.unsplash.com/photo-1568480289356-5a75d0fd47fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form_inputs {
+  display: flex;
+  width: 70%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(32, 41, 38, 0.911);
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  border-radius: 15px;
+  color: #fbfbfb;
+}
+
+.temperamentContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

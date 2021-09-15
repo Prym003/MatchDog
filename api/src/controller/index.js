@@ -1,7 +1,6 @@
 const { Breed, Temperament } = require("../models/index");
 const axios = require("axios");
 
-//
 class ModelController {
   constructor(model) {
     this.model = model;
@@ -17,7 +16,7 @@ class ModelController {
         weight: weight.metric,
         height: height.metric,
         life_span,
-        temperament: temperament?.split(", "),
+        temperaments: temperament?.split(", "),
         image: image.url,
       };
     });
@@ -39,7 +38,22 @@ class ModelController {
   getAllData = async () => {
     const apiData = await this.getApiData();
     const dbData = await this.getBreedDbData();
-    const allData = apiData.concat(dbData);
+    const dbTempFil = await dbData?.map((breed) => {
+      let { id, name, height, weight, life_span, image, createInDb } = breed;
+      return {
+        id,
+        name,
+        height,
+        weight,
+        life_span,
+        image,
+        createInDb,
+        temperaments: breed.temperaments?.map((temp) => {
+          return temp.name;
+        }),
+      };
+    });
+    const allData = apiData.concat(dbTempFil);
     return allData;
   };
 
@@ -60,16 +74,6 @@ class ModelController {
   //       next(error);
   //     });
   // };
-
-  createDbData = (req, res, next) => {
-    const element = req.body;
-    this.model
-      .create(element)
-      .then((element) => res.send(element))
-      .catch((error) => {
-        next(error);
-      });
-  };
 }
 
 const MainController = new ModelController();

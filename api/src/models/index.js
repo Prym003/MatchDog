@@ -1,12 +1,12 @@
 const { Sequelize } = require("sequelize");
-const BreedFactory = require("./Breed");
-const TemperamentFactory = require("./Temperament");
 const {
   DB_USER,
   DB_PASSWORD,
   DB_HOST,
   DB_NAME,
 } = require("../utils/config/index");
+const BreedFactory = require("./Breed");
+const TemperamentFactory = require("./Temperament");
 
 const sequelize = new Sequelize(
   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`,

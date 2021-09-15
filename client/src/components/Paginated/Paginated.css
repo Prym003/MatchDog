@@ -1,0 +1,68 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  flex-grow: 1;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  height: 70vh;
+  padding-top: 20px;
+  overflow-x: hidden;
+  flex-grow: 1;
+}
+
+.cards::-webkit-scrollbar{
+  width: 7px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color:  rgb(9, 139, 172);
+}
+
+.divButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 27px;
+  background-color: rgba(172, 169, 165, 0.555);
+  margin-left: 455px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
+.notFound{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.753);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+}
+
+.divButtons button {
+  border-radius: 45%;
+  border: 0;
+  background-color: rgb(9, 139, 172);
+  color: #edf0f1;
+  transition: all 0.3s ease 0s;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 7%;
+}
+
+.divButtons button:hover {
+  color: #24252a;
+  background-color: rgb(11, 118, 145);
+}
