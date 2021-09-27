@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 92.5vh;
-  background-image: url("https://images.unsplash.com/photo-1568480289356-5a75d0fd47fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-image: url("https://media.istockphoto.com/photos/park-at-night-picture-id171253211?b=1&k=20&m=171253211&s=170667a&w=0&h=8wzxFTKCtD6YS4paGo8H4iWn4QLJrUtuUeQa0UbCshE=");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,15 +16,115 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(32, 41, 38, 0.911);
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   margin-top: 10px;
   border-radius: 15px;
   color: #fbfbfb;
 }
 
-.temperamentContainer{
+.temperamentContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: auto;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 50px;
+  margin: 25px;
+}
+
+.inputs {
+  background-color: rgb(207, 193, 175);
+  height: 25px;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 20px;
+  color: rgb(29, 29, 29);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  align-items: center;
+}
+
+.inputs input {
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.create {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-left: 50%;
+}
+
+.create button {
+  transition: all 0.3s ease 0s;
+  padding: 9px 15px;
+  background-color: rgb(9, 139, 172);
+  border-radius: 50px;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #edf0f1;
+}
+
+.create button:hover {
+  color: #24252a;
+  background-color: rgb(11, 118, 145);
+}
+
+.temperamentContainer {
+  background-color: rgba(255, 255, 255, 0.24);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  overflow: scroll;
+  height: 250px;
+  overflow-x: hidden;
+}
+
+.temperamentContainer::-webkit-scrollbar{
+  width: 7px;
+}
+
+.temperamentContainer::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color:  rgb(9, 139, 172);
+}
+
+.temp {
+  background-color: rgb(207, 193, 175);
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: rgb(29, 29, 29);
+}
+
+.tempDiv{
+  transition: all 0.3s ease 0s;
+  padding: 9px 15px;
+  background-color: rgb(9, 139, 172);
+  border-radius: 50px;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #edf0f1;
+  width: 105px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 48%;
 }

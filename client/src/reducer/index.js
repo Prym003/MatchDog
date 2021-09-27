@@ -70,8 +70,8 @@ export default function Controller(state = initialState, action) {
     case PAGINATION:
       return {
         ...state,
-        pageControler: payload
-      }
+        pageControler: payload,
+      };
     default:
       return state;
   }
@@ -159,10 +159,11 @@ const getAvarage = (el) => {
 const filterByApiDb = (allDogs, apiOrDataBase) => {
   let filAndOrder = allDogs;
   const { api, db } = apiOrDataBase;
-  if (api) {
+  if (api && db) {
+    return filAndOrder;
+  } else if (api) {
     filAndOrder = allDogs.filter((dog) => dog.createInDb === undefined);
-  }
-  if (db) {
+  } else if (db) {
     filAndOrder = allDogs.filter((dog) => dog.createInDb === true);
   }
   return filAndOrder;

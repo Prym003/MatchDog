@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Routes>
         {/* Routes... */}
-        <Route path='/' component={Nav} />
+        <Route path='/:n' component={Nav} />
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/Home" component={Home} />
         <Route exact path="/DogDetails/:id" component={DogDetails} />

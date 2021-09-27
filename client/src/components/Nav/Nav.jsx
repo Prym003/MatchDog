@@ -5,7 +5,9 @@ import "./Nav.css";
 export default function Nav() {
   return (
     <header>
-      <img src="https://i.ibb.co/608dCH2/Logo.png" alt="LOGO" />
+      <Link to="/">
+        <img src="https://i.ibb.co/608dCH2/Logo.png" alt="LOGO" />
+      </Link>
       <ul className="nav">
         <li>
           <Link to="/Home">Home</Link>

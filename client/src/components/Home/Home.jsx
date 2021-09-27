@@ -10,6 +10,7 @@ export default function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllDogs({}, {}, "A-Z"));
+    return dispatch(getAllDogs({}, {}, "A-Z"));
   }, [dispatch]);
 
   return (

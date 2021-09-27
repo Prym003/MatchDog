@@ -13,3 +13,29 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.msn {
+  display: flex;
+  background-color: #fdfdfda8;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.landingPage h2 {
+  display: flex;
+  background-color: #fdfdfda8;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  color: black;
+}
+
+.msn p {
+  color: black;
+}
+
+.carruselConteainer {
+  display: flex;
+  flex-direction: row;
+}

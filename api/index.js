@@ -5,7 +5,7 @@ const { PORT } = require("./src/utils/config/index");
 const { chargeTempApiToDb } = require("./src/controller/Temperament");
 
 // Syncing all the models at once.
-db.sync()
+db.sync({force:true})
   .then(() => {
     chargeTempApiToDb();
     server.listen(PORT, () => {

@@ -1,7 +1,7 @@
 .home {
   display:flex;
   background-color:rgba(20, 19, 19, 0.808);
-  background-image: url("https://images.unsplash.com/photo-1528928288944-fa933d1eed87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-image: url("https://images.unsplash.com/photo-1560426961-4aa4cdcb7edc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHBhcmslMjAlMjBuaWdodHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
