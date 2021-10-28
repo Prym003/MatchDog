@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <header>
       <Link to="/">
-        <img src="https://i.ibb.co/608dCH2/Logo.png" alt="LOGO" />
+        <h3>MatchDog</h3>
       </Link>
       <ul className="nav">
         <li>

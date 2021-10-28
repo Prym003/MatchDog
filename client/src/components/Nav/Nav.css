@@ -3,7 +3,7 @@
 a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   color: #edf0f1;
 }
 
@@ -16,6 +16,10 @@ header {
   margin: 0;
   padding: 0;
   background-color: #24252a;
+}
+
+header h3 {
+  margin-left: 25px;
 }
 
 ul.nav li {
