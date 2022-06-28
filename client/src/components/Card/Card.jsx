@@ -1,11 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
-<<<<<<< HEAD
-//asdfasdfasdasdgasd
-=======
 
->>>>>>> parent of fc72eee (pruebas reverse)
 export default function Card({ id, url, name, weight, temperaments }) {
   return (
     <Link to={`/DogDetails/${id}`}>
